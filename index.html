@@ -4,10 +4,44 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Portafolio | QfindeR</title>
   </head>
   <body>
-    <p class="text-base text-red-500">Hola Vite</p>
-    <script type="module" src="/main.js"></script>
+    <header class="sm:container mx-auto flex justify-between items-center py-5">
+      <figure>
+        <img src="images/logo.png" class="w-20" alt="Logo de la Empresa QfindeR">
+      </figure>
+
+      <nav class="flex gap-x-14">
+        <li class="list-none">
+          <a href="#" class="text-xl uppercase font-medium">Inicio</a>
+        </li>
+        <li class="list-none">
+          <a href="#" class="text-xl uppercase font-medium">Acerca de Nosotros</a>
+        </li>
+        <li class="list-none">
+          <a href="#" class="text-xl uppercase font-medium">Contactanos</a>
+        </li>
+      </nav>
+
+      <div class="flex gap-x-5">
+        <a href="#" class="py-2 px-6 bg-white border-azul border-[1px] text-azul uppercase rounded-lg shadow-md text-[17px]">Registrarse</a>
+        <a href="#" class="py-2 px-6 bg-azul text-white uppercase rounded-lg shadow-md text-[17px]">Inicio Sesion</a>
+      </div>
+    </header>
+    <section class="">
+      <div class="bg-slide1 bg-cover bg-no-repeat h-[750px]">
+        <div class="container mx-auto relative h-full">
+          <!--<div class="absolute top-0 bottom-0 h-full flex flex-col justify-center bg-gradient-to-r from-azulMyClaro to-transparent">-->
+          <div class="absolute top-0 bottom-0 h-full flex flex-col justify-center items-start gap-y-6">
+            <p class="text-6xl font-medium">QfindeR</p>
+            <p class="text-3xl max-w-[500px]">Solicita tu servicio descargando la aplicacion, disponible en Android y IOS</p>
+            <a href="#" class="py-2 px-10 bg-verdeClaro border-verdeOscuro border-[3px] text-white rounded-lg text-[20px] text-center inline mt-10">Descargar Aquí</a>
+          </div>
+        </div>
+        <!--<img src="/images/slide-1.jpg" alt="Slide de presentacion" class="max-w-full w-full relative -z-[1]">-->
+      </div>
+    </section>
   </body>
+    <script type="module" src="/main.js"></script>
 </html>
