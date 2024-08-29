@@ -16,7 +16,9 @@ export default {
       },
       backgroundImage: {
         'slide1': "linear-gradient(90deg, #84B6F4 -10%, transparent 90%), url('images/slide-1.jpg')",
-        'bgServicios': "linear-gradient(rgba(0, 117, 255, 17%), rgba(0, 117, 255, 17%)), url('images/bg-servicios.png')"
+        'bgServicios': "linear-gradient(rgba(0, 117, 255, 17%), rgba(0, 117, 255, 17%)), url('images/bg-servicios.png')",
+        'dapp': 'linear-gradient(to right, #FFF -2%, #FFF 50%, #B6D2FC 50%)',
+        'bgAbuelaMedico': 'url(/images/elipse-abuela-medico.png)'
       },
       screens: {
         'mq1360': { 'raw': '(min-width: 1360px)' },
@@ -26,6 +28,9 @@ export default {
       },
       boxShadow:{
         "sliderShadowText": "2px 2px 1px #00000030"
+      },
+      backgroundSize: {
+        "92%": "92%"
       }
     },
   },
