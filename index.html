@@ -8,29 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/slideshow.css">
   </head>
   <body>
-    <header class="sm:container mx-auto flex justify-between items-center py-2">
+    <header class="sm:container mx-auto flex justify-between items-center py-2 px-3 lg:px-0">
       <figure>
-        <img src="images/logo.png" class="w-20" alt="Logo de la Empresa QfindeR">
+        <img src="images/logo.png" class="w-16 mq1200:w-20" alt="Logo de la Empresa QfindeR">
       </figure>
 
-      <nav class="flex gap-x-14">
+      <nav class="hidden lg:flex gap-x-14">
         <li class="list-none">
-          <a href="#" class="text-xl uppercase font-medium">Inicio</a>
+          <a href="#" class="text-lg mq1200:text-xl uppercase font-medium">Inicio</a>
         </li>
         <li class="list-none">
-          <a href="#" class="text-xl uppercase font-medium">Acerca de Nosotros</a>
+          <a href="#" class="text-lg mq1200:text-xl uppercase font-medium">Acerca de Nosotros</a>
         </li>
         <li class="list-none">
-          <a href="#" class="text-xl uppercase font-medium">Contactanos</a>
+          <a href="#" class="text-lg mq1200:text-xl uppercase font-medium">Contactanos</a>
         </li>
       </nav>
 
-      <div class="flex gap-x-5">
-        <a href="#" class="py-2 px-6 bg-white border-azul border-[1px] text-azul uppercase rounded-lg shadow-md text-[17px]">Registrarse</a>
-        <a href="#" class="py-2 px-6 bg-azul text-white uppercase rounded-lg shadow-md text-[17px]">Inicio Sesion</a>
+      <div class="hidden lg:flex gap-x-5">
+        <a href="#" class="py-1 px-4 text-[16px] mq1200:py-2 mq1200:px-6 bg-white border-azul border-[1px] text-azul uppercase rounded-lg shadow-md mq1200:text-[17px]">Registrarse</a>
+        <a href="#" class="py-1 px-4 text-[16px] mq1200:py-2 mq1200:px-6 bg-azul text-white uppercase rounded-lg shadow-md mq1200:text-[17px]">Inicio Sesion</a>
       </div>
+
+      <button class="w-7 lg:hidden">
+        <img src="/images/menu.png" alt="Icono de menu movil">
+      </button>
     </header>
 
     <div id="header">
@@ -47,71 +52,48 @@
           <div id="next" class="btn"></div>
         </div>
       </div>
-      <!-- jQuery handles for the text displayed on top of the images -->
-      <!--<div id="headertxt">
-        <p class="caption">
-          <span id="firstline"></span>
-          <a href="#" id="secondline"></a>
-        </p>
-        <p class="pictured">
-          Pictured:
-          <a href="#" id="pictureduri"></a>
-        </p>
-      </div>-->
-      <div class="container mx-auto relative h-full">
-        <div class="absolute top-0 bottom-0 h-full flex flex-col justify-center items-start gap-y-6">
-          <h1 class="text-6xl font-medium">QfindeR</h1>
-          <p class="text-3xl max-w-[500px] font-light">Solicita tu servicio descargando la aplicacion, disponible en Android y IOS</p>
-          <a href="#" class="py-2 px-10 bg-verdeClaro border-verdeOscuro border-[3px] text-white rounded-lg text-[20px] text-center inline mt-10">Descargar Aquí</a>
+      <div class="md:container mx-auto relative h-full w-full flex justify-center items-center md:block">
+        <div class="md:absolute top-0 bottom-0 h-full flex flex-col justify-center items-center md:items-start md:gap-y-6">
+          <h1 class="text-4xl md:text-6xl font-medium slider [text-shadow:2px_2px_1px_#00000030]">QfindeR</h1>
+          <p class="text-xl md:text-3xl max-w-[500px] text-center md:text-left font-light slider [text-shadow:2px_2px_1px_#00000030]">Solicita tu servicio descargando la aplicacion, disponible en Android y IOS</p>
+          <a href="#" class="py-1 md:py-2 px-6 md:px-10 bg-verdeClaro border-verdeOscuro border-[3px] text-white rounded-lg text-[20px] text-center inline mt-10">Descargar Aquí</a>
         </div>
       </div>
     </div>
-    <!--<section class="">
-      <div class="bg-slide1 bg-cover bg-no-repeat h-[750px]">
-        <div class="container mx-auto relative h-full">
-          <div class="absolute top-0 bottom-0 h-full flex flex-col justify-center items-start gap-y-6">
-            <h1 class="text-6xl font-medium">QfindeR</h1>
-            <p class="text-3xl max-w-[500px] font-light">Solicita tu servicio descargando la aplicacion, disponible en Android y IOS</p>
-            <a href="#" class="py-2 px-10 bg-verdeClaro border-verdeOscuro border-[3px] text-white rounded-lg text-[20px] text-center inline mt-10">Descargar Aquí</a>
-          </div>
-        </div>
-      </div>
-    </section>-->
-
     <section class="my-14">
-      <h2 class="text-[40px] font-normal text-center text-purpuraAzul">CARACTERISTICAS DE LA APP QfindeR</h2>
+      <h2 class="font-normal text-center text-purpuraAzul text-[28px] mq810:text-[40px]">CARACTERISTICAS DE LA APP QfindeR</h2>
       
-      <div class="container mx-auto flex justify-between gap-x-[5%] mt-16">
-        <div class="flex-1">
+      <div class="container mx-auto mq810:flex justify-between gap-x-[5%] mt-16 gap-y-12 flex-wrap mq1360:flex-nowrap">
+        <div class="flex-[40%] flex flex-col items-center    mq1360:block mq1360:flex-1">
           <figure class="bg-azulAgua w-60 h-60 p-10 rounded-full">
             <img src="/images/ayuda.png" alt="">
           </figure>
           <p class="text-rojo text-2xl my-6">Comunicación Efectica</p>
-          <p class="text-xl">Ayuda al contacto entre auxiliar y familiar para tener una comunicación mas efectiva.</p>
+          <p class="text-xl text-center mq1360:text-left">Ayuda al contacto entre auxiliar y familiar para tener una comunicación mas efectiva.</p>
         </div>
 
-        <div class="flex-1">
+        <div class="flex-[40%] flex flex-col items-center    mq1360:block mq1360:flex-1">
           <figure class="bg-azulAgua w-60 h-60 p-10 rounded-full">
             <img src="/images/obrero.png" alt="">
           </figure>
           <p class="text-rojo text-2xl my-6">Servicio de auxiliares</p>
-          <p class="text-xl leading-relaxed">Brindará una forma rápida de contactar o contratar a auxiliares de distintas empresas.</p>
+          <p class="text-xl leading-relaxed text-center mq1360:text-left">Brindará una forma rápida de contactar o contratar a auxiliares de distintas empresas.</p>
         </div>
 
-        <div class="flex-1">
+        <div class="flex-[40%] flex flex-col items-center    mq1360:block mq1360:flex-1">
           <figure class="bg-azulAgua w-60 h-60 p-10 rounded-full">
             <img src="/images/telefono-inteligente.png" alt="">
           </figure>
           <p class="text-rojo text-2xl my-6">Ubicación en tiempo real</p>
-          <p class="text-xl leading-relaxed">Los familiares tendrán acceso a la ubicación del paciente todo el tiempo, para brindar  mayor seguridad y tranquilidad.</p>
+          <p class="text-xl leading-relaxed text-center mq1360:text-left">Los familiares tendrán acceso a la ubicación del paciente todo el tiempo, para brindar  mayor seguridad y tranquilidad.</p>
         </div>
 
-        <div class="flex-1">
+        <div class="flex-[40%] flex flex-col items-center    mq1360:block mq1360:flex-1">
           <figure class="bg-azulAgua w-60 h-60 p-10 rounded-full">
             <img src="/images/servicio-al-cliente.png" alt="">
           </figure>
           <p class="text-rojo text-2xl my-6">Atención al cliente</p>
-          <p class="text-xl leading-relaxed">Se contactara con  las empresas y con el servicio de QfindeR para atender solicitudes, quejas y reclamos</p>
+          <p class="text-xl leading-relaxed text-center mq1360:text-left">Se contactara con  las empresas y con el servicio de QfindeR para atender solicitudes, quejas y reclamos</p>
         </div>
       </div>
 
@@ -120,8 +102,8 @@
     <section class="py-14 bg-bgServicios bg-cover bg-top">
       <h2 class="text-[40px] font-normal text-center text-purpuraAzul uppercase">Nuestros Servicios</h2>
 
-      <div class="container mx-auto mt-16 flex flex-col gap-y-28">
-        <div class="w-12/12 flex flex-row gap-x-28">
+      <div class="container mx-auto mt-16 flex flex-col">
+        <!--<div class="w-12/12 flex flex-row gap-x-10 mq1360:gap-x-28">
           <div class="w-4/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
             <img src="images/obrero.png" alt="Logo de Doctor" class="w-24">
             <p class=" text-2xl mb-1 mt-8">Auxiliares</p>
@@ -137,20 +119,35 @@
             <p class=" text-2xl mb-1 mt-8">Medios de comunicación</p>
             <p class="text-grisTexto text-lg">La app posee diferentes medios de comunicación, entre familiares- auxiliares, auxiliar-empresa, y familiar- empresa</p>
           </div>
-        </div>
-
-        <div class="w-12/12 flex flex-row gap-x-28">
-          <div class="w-4/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
-            <img src="images/telefono-inteligente.png" alt="Logo de Doctor" class="w-24">
-            <p class=" text-2xl mb-1 mt-8">Escaneo QR</p>
-            <p class="text-grisTexto text-lg">Facilitar por medio de un código QR el ingreso y revisión de las notas que realicen los auxiliares.</p>
+        </div>-->
+        <!-- gap-y-10 mq1360:gap-y-28 -->
+        <div class="w-12/12 flex flex-wrap flex-row items-stretch justify-center gap-x-20 mq1360:gap-x-28 gap-y-10 mq1360:gap-y-20">
+          <div class="w-11/12 mq1080:w-3/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
+            <img src="images/obrero.png" alt="Logo de Doctor" class="w-24">
+            <p class=" text-2xl mb-1 mt-8">Auxiliares</p>
+            <p class="text-grisTexto text-lg">Tendrás contacto con auxiliares de diferentes empresas juntos sus recomendaciones y calificación.</p>
           </div>
-          <div class="w-4/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
+          <div class="w-11/12 mq1080:w-3/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
             <img src="images/lapiz1.png" alt="Logo de Doctor" class="w-24">
             <p class=" text-2xl mb-1 mt-8">Notas</p>
             <p class="text-grisTexto text-lg">Se tendrá un registro de notas donde el auxiliar redactara sus cuidados y rutinas que se realicen al paciente.</p>
           </div>
-          <div class="w-4/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
+          <div class="w-11/12 mq1080:w-3/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
+            <img src="images/medios-de-comunicacion-en-masa1.png" alt="Logo de Doctor" class="w-24">
+            <p class=" text-2xl mb-1 mt-8">Medios de comunicación</p>
+            <p class="text-grisTexto text-lg">La app posee diferentes medios de comunicación, entre familiares- auxiliares, auxiliar-empresa, y familiar- empresa</p>
+          </div>
+          <div class="w-11/12 mq1080:w-3/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
+            <img src="images/telefono-inteligente.png" alt="Logo de Doctor" class="w-24">
+            <p class=" text-2xl mb-1 mt-8">Escaneo QR</p>
+            <p class="text-grisTexto text-lg">Facilitar por medio de un código QR el ingreso y revisión de las notas que realicen los auxiliares.</p>
+          </div>
+          <div class="w-11/12 mq1080:w-3/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
+            <img src="images/lapiz1.png" alt="Logo de Doctor" class="w-24">
+            <p class=" text-2xl mb-1 mt-8">Notas</p>
+            <p class="text-grisTexto text-lg">Se tendrá un registro de notas donde el auxiliar redactara sus cuidados y rutinas que se realicen al paciente.</p>
+          </div>
+          <div class="w-11/12 mq1080:w-3/12 p-8 bg-grisTrasparente border-[1px] border-black rounded-xl">
             <img src="images/medios-de-comunicacion-en-masa1.png" alt="Logo de Doctor" class="w-24">
             <p class=" text-2xl mb-1 mt-8">Medios de comunicación</p>
             <p class="text-grisTexto text-lg">La app posee diferentes medios de comunicación, entre familiares- auxiliares, auxiliar-empresa, y familiar- empresa</p>

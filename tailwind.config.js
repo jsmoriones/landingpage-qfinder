@@ -17,6 +17,15 @@ export default {
       backgroundImage: {
         'slide1': "linear-gradient(90deg, #84B6F4 -10%, transparent 90%), url('images/slide-1.jpg')",
         'bgServicios': "linear-gradient(rgba(0, 117, 255, 17%), rgba(0, 117, 255, 17%)), url('images/bg-servicios.png')"
+      },
+      screens: {
+        'mq1360': { 'raw': '(min-width: 1360px)' },
+        'mq1200': { 'raw': '(min-width: 1200px)' },
+        'mq1080': { 'raw': '(min-width: 1080px)' },
+        'mq810': { 'raw': '(min-width: 810px)' },
+      },
+      boxShadow:{
+        "sliderShadowText": "2px 2px 1px #00000030"
       }
     },
   },
